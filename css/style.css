@@ -1,0 +1,32 @@
+html {
+  min-height: 100%;
+  background-color: rgb(250, 250, 250);
+}
+
+body {
+  font-size: 18px;
+}
+
+* {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
+}
+
+.header {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-svg {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 600px) {
+  .logo-svg {
+    width: 80px;
+    height: 80px;
+  }
+}
