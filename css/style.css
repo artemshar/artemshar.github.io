@@ -1,50 +1,111 @@
-html {
+:root {
   --color-bg: #f0f0f0;
-  --glow-color: #080808;
+  --color-glow: #080808;
+  --color-font-main: #282828;
+}
 
+html {
   min-height: 100%;
   background-color: var(--color-bg);
 }
 
 body {
   font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: var(--color-font-main);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+details {
+  padding: 10px;
+}
+summary {
+  margin-bottom: 10px;
 }
 
 * {
+
   box-sizing: border-box;
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif; 
 }
 
-a {
-  background-color: #fff;
-}
-
+/* Header part */
 .nav-btn {
   display: inline-block;
-  box-shadow: 3px 3px 3px #9c9c9c, -3px -3px 3px var(--color-bg);
+  box-shadow: 3px 3px 3px #dadada, -3px -3px 3px var(--color-bg);
   text-decoration: none;
   color: rgb(44, 44, 44);
   margin: 4px 4px;
   padding: 6px 8px;
   border-radius: 2px;
   font-size: 16px;
+  background-color: #fff;
 }
 
 .nav-btn.active {
-  box-shadow: inset 3px 3px 3px -1px #9c9c9c, inset -3px -3px 3px -1px var(--color-bg);
+  box-shadow: inset 3px 3px 3px -1px #dadada, inset -3px -3px 3px -1px var(--color-bg);
 }
+
 
 .container {
   margin: 0 auto;
   max-width: 900px;
+  position: relative;
+  padding: 0 6px;
 }
 
 .header {
-  padding-top: 10px;
+  padding-top: 50px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.header-top {
+  position: fixed;
+  background-color: var(--color-bg);
+  width: 100%;
+  top: 0;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: -14px -14px 20px #a5a5a5, 14px 14px 14px #dbdbdb;
+}
+.hello {
+  margin-right: 6px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #aaa;
+  transition: .15s;
+}
+.hello:hover {
+  color: #000;
+}
+.p-name {
+  white-space: nowrap;
+}
+
+.links-list {
+  display: flex;
+  align-items: center;
+}
+.link-item {
+  margin: 0 4px;
+}
+.link-item a {
+  display: inline-flex;
+}
+.link-item a:hover svg {
+  color: #000;
+  fill: #000;
 }
 
 .logo-wrap {
@@ -53,6 +114,7 @@ a {
   justify-self: center;
   position: relative;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .logo-wrap:after {
   content: '';
@@ -63,7 +125,7 @@ a {
   border-radius: 50%;
   left: 25%;
   top: 25%;
-  box-shadow: 8px 10px 30px var(--glow-color), 5px 5px 20px #d9fbff;
+  box-shadow: 8px 10px 30px var(--color-glow), 5px 5px 20px #d9fbff;
   z-index: 3;
 }
 .logo-wrap:before {
@@ -74,7 +136,7 @@ a {
   border-radius: 50%;
   left: 0;
   top: 0;
-  box-shadow: 8px 7px 20px var(--glow-color), 7px 7px 15px #D9FBFE;
+  box-shadow: 8px 7px 20px var(--color-glow), 7px 7px 15px #D9FBFE;
   z-index: 1;
 }
 .logo-svg {
@@ -89,6 +151,7 @@ a {
   background-color: #fff;
   padding: 20px 20px;
 }
+
 
 @media (max-width: 600px) {
   .logo-svg {
