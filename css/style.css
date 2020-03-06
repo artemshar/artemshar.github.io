@@ -24,9 +24,10 @@ a {
   box-shadow: 3px 3px 3px #9c9c9c, -3px -3px 3px var(--color-bg);
   text-decoration: none;
   color: rgb(44, 44, 44);
-  margin: 0 4px;
+  margin: 4px 4px;
   padding: 6px 8px;
-  font-size: 20px;
+  border-radius: 2px;
+  font-size: 16px;
 }
 
 .nav-btn.active {
@@ -39,7 +40,7 @@ a {
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 10px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
@@ -51,7 +52,7 @@ a {
   align-items: center;
   justify-self: center;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .logo-wrap:after {
   content: '';
@@ -91,7 +92,7 @@ a {
 
 @media (max-width: 600px) {
   .logo-svg {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 }
