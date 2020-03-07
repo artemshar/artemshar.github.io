@@ -79,18 +79,13 @@ summary {
   z-index: 10;
   box-shadow: 0 -18px 30px #a5a5a5, 0 4px 10px #dbdbdb;
 }
-.hello {
-  margin-right: 6px;
-  margin-bottom: 4px;
-  font-size: 16px;
-  color: #aaa;
-  transition: .15s;
-}
-.hello:hover {
-  color: #000;
-}
 .p-name {
   white-space: nowrap;
+  color: transparent;
+  transition: .2s;
+}
+.p-name:hover {
+  color: var(--color-font-main);
 }
 
 .links-list {
