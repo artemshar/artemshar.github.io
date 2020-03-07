@@ -38,18 +38,18 @@ summary {
 /* Header part */
 .nav-btn {
   display: inline-block;
-  box-shadow: 3px 3px 3px #dadada, -3px -3px 3px var(--color-bg);
+  box-shadow: 3px 3px 3px #8c8c8c, -3px -3px 3px var(--color-bg);
   text-decoration: none;
   color: rgb(44, 44, 44);
   margin: 4px 4px;
   padding: 6px 8px;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 16px;
   background-color: #fff;
 }
 
 .nav-btn.active {
-  box-shadow: inset 3px 3px 3px -1px #dadada, inset -3px -3px 3px -1px var(--color-bg);
+  box-shadow: inset 3px 3px 3px -1px #8c8c8c, inset -3px -3px 3px -1px var(--color-bg);
 }
 
 
@@ -77,7 +77,7 @@ summary {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  box-shadow: -14px -14px 20px #a5a5a5, 14px 14px 14px #dbdbdb;
+  box-shadow: 0 -18px 30px #a5a5a5, 0 4px 10px #dbdbdb;
 }
 .hello {
   margin-right: 6px;
