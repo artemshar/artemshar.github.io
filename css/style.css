@@ -1,6 +1,6 @@
 :root {
   --color-bg: #f0f0f0;
-  --color-glow: #080808;
+
   --color-font-main: #282828;
 }
 
@@ -61,7 +61,7 @@ summary {
 }
 
 .header {
-  padding-top: 50px;
+  padding-top: 60px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
@@ -69,22 +69,25 @@ summary {
 }
 .header-top {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--color-bg);
   width: 100%;
   top: 0;
   padding: 4px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 10;
   box-shadow: 0 -18px 30px #a5a5a5, 0 4px 10px #dbdbdb;
 }
 .p-name {
   white-space: nowrap;
+}
+
+.focus {
   color: transparent;
   transition: .2s;
 }
-.p-name:hover {
+.focus:hover {
   color: var(--color-font-main);
 }
 
@@ -104,6 +107,9 @@ summary {
 }
 
 .logo-wrap {
+  --color-glow-1: #080808;
+  --color-glow-2: #D9FBFF;
+
   display: flex;
   align-items: center;
   justify-self: center;
@@ -120,7 +126,7 @@ summary {
   border-radius: 50%;
   left: 25%;
   top: 25%;
-  box-shadow: 8px 10px 30px var(--color-glow), 5px 5px 20px #d9fbff;
+  box-shadow: 8px 10px 30px var(--color-glow-1), 5px 5px 20px var(--color-glow-2);
   z-index: 3;
 }
 .logo-wrap:before {
@@ -131,12 +137,12 @@ summary {
   border-radius: 50%;
   left: 0;
   top: 0;
-  box-shadow: 8px 7px 20px var(--color-glow), 7px 7px 15px #D9FBFE;
+  box-shadow: 8px 7px 20px var(--color-glow-1), 7px 7px 15px var(--color-glow-2);
   z-index: 1;
 }
 .logo-svg {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   z-index: 3;
 }
 
