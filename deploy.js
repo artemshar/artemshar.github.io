@@ -1,3 +1,8 @@
 var ghpages = require('gh-pages');
 
-ghpages.publish('build', function(err) {});
+const options = {
+  branch: 'master',
+  repo: 'https://github.com/artemshar/artemshar.github.io.git'
+}
+
+ghpages.publish('build', options, function(err) {});
