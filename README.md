@@ -4,10 +4,10 @@
 
 
 ### Developing
-In the **master** branch
+In the **develop** branch
 
 ### Deploy
-From the **gh-pages** branch
+From the **master** branch
 
 For 2 steps:
 - yarn build

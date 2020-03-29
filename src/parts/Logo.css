@@ -1,7 +1,7 @@
 
 .logo-wrap {
-  --color-glow-1: #080808;
-  --color-glow-2: #D9FBFF;
+  --color-glow-1: #fc2828;
+  --color-glow-2: rgb(255, 238, 0);
 
   display: flex;
   align-items: center;
