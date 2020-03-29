@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .links-list {
@@ -21,6 +21,6 @@
   display: inline-flex;
 }
 .link-item a:hover svg {
-  color: #000;
-  fill: #000;
+  color: rgb(0, 143, 187);
+  fill: rgb(0, 143, 187);
 }
