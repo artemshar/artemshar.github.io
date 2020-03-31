@@ -20,10 +20,10 @@
   display: inline-flex;
 }
 .link-item a svg {
-  color: rgb(0, 119, 155);
-  fill:rgb(0, 119, 155);
+  color: #91aabb;
+  fill:#91aabb;
 }
 .link-item a:hover svg {
-  color: rgb(0, 143, 187);
-  fill: rgb(0, 143, 187);
+  color: #01546d;
+  fill: #01546d;
 }
