@@ -61,9 +61,9 @@ summary {
 
 .focus {
   color: transparent;
-  transition: .2s;
+  transition: .4s;
 }
-.focus:hover {
+.header:hover .focus {
   color: var(--color-font-main);
 }
 

@@ -6,7 +6,6 @@
   position: relative;
   margin-bottom: 30px;
   margin-top: 20px;
-  transition: .2s;
 }
 .logo-wrap:after {
   content: '';
@@ -38,9 +37,6 @@
   width: 120px;
   height: 120px;
   z-index: 3;
-}
-.logo-wrap:hover {
-  transform: scale(0.96);
 }
 
 

@@ -7,7 +7,7 @@ function Site() {
   return (
     <div className="container">
       <header className="header">
-        <span className="focus">focus</span>
+        <span className="focus">artemshar.space</span>
         {/* <div className="h-card header-top">
           <div className="nav">
 
