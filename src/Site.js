@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from './parts/Logo.js'
 import Contacts from './parts/Contacts.js'
-import Button from './parts/Button.js'
 import './Site.css'
 
 function Site() {

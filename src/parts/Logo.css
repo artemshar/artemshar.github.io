@@ -9,6 +9,7 @@
   position: relative;
   margin-bottom: 30px;
   margin-top: 20px;
+  transition: .2s;
 }
 .logo-wrap:after {
   content: '';
@@ -21,10 +22,12 @@
   top: 25%;
   box-shadow: 8px 10px 30px var(--color-glow-1), 5px 5px 20px var(--color-glow-2);
   z-index: 3;
+  animation: rotateShadow 10s linear infinite;
 }
 .logo-wrap:before {
   content: '';
   position: absolute;
+  background-color: #313131;
   width: 99%;
   height: 99%;
   border-radius: 50%;
@@ -32,9 +35,19 @@
   top: 0;
   box-shadow: 8px 7px 20px var(--color-glow-1), 7px 7px 15px var(--color-glow-2);
   z-index: 1;
+  animation: rotateShadow 10s linear infinite;
 }
 .logo-svg {
   width: 120px;
   height: 120px;
   z-index: 3;
+}
+.logo-wrap:hover {
+  transform: scale(0.96);
+}
+
+
+@keyframes rotateShadow {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
 }
