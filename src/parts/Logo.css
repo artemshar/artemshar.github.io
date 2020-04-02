@@ -1,8 +1,5 @@
 
 .logo-wrap {
-  --color-glow-1: #2b2b2b;
-  --color-glow-2: rgb(196, 196, 196);
-
   display: flex;
   align-items: center;
   justify-self: center;
@@ -20,7 +17,7 @@
   border-radius: 50%;
   left: 25%;
   top: 25%;
-  box-shadow: 8px 10px 30px var(--color-glow-1), 5px 5px 20px var(--color-glow-2);
+  box-shadow: 8px 10px 30px #929292, 5px 5px 20px #000000;
   z-index: 3;
   animation: rotateShadow 10s linear infinite;
 }
@@ -33,7 +30,7 @@
   border-radius: 50%;
   left: 0;
   top: 0;
-  box-shadow: 8px 7px 20px var(--color-glow-1), 7px 7px 15px var(--color-glow-2);
+  box-shadow: 1px -5px 17px #ffffff, 7px 7px 19px #b3b3b3;
   z-index: 1;
   animation: rotateShadow 10s linear infinite;
 }
