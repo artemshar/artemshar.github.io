@@ -8,6 +8,8 @@
   right: 0px;
   padding: 10px;
   width: 100%;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .links-wrapper {
