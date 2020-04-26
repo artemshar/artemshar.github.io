@@ -1,18 +1,30 @@
 
 .contacts {
+  position: fixed;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  bottom: 0;
+  right: 0px;
+  padding: 10px;
+  width: 100%;
 }
 
+.links-wrapper {
+}
+
+.contacts-title {
+  margin: 0;
+}
 .links-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   font-size: 12px;
+  top: 100%;
+  transition: .15s;
 }
+
 .link-item {
   margin: 0 4px;
 }

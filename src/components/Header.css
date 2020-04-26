@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  padding: 26px 0 16px 0;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.p-name {
+  position: relative;
+  white-space: nowrap;
+  font-size: 24px;
+  color: #1b1b1b;
+  font-family: 'Lexend Giga', sans-serif;
+  z-index: 100;
+}

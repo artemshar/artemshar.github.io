@@ -1,0 +1,85 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+details {
+  padding: 10px;
+}
+
+summary {
+  margin-bottom: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hello-text {
+  width: 100%; 
+  margin: 0 0 20px 0;
+  font-size: 22px;
+  text-align: left;
+}
+
+.cv-link {
+  color: #00418b;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.main {
+  margin-top: 40px;
+}
+
+.actual-message {
+  width: 100%;
+  min-height: 60px;
+  background-color: #fff;
+  padding: 20px 20px;
+}
+
+.focus-time {
+  margin: 70px auto;
+  text-align: left;
+  font-size: 18px;
+  color: #5c5c5c;
+}
+
+.msg {
+  margin-bottom: 4px;
+}
+
+.focus {
+  animation: time 2s 2s forwards;
+  opacity: 0;
+}
+
+.care {
+  animation: time 2s 4s forwards;
+  opacity: 0;
+}
+
+.write-me {
+  animation: time 2s 7s forwards;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+.amazing {
+  margin-top: 100px;
+  animation: time 2s 14s forwards;
+  opacity: 0;
+}
+
+
+@keyframes time {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
