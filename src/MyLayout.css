@@ -54,6 +54,7 @@ summary {
 
 .msg {
   margin-bottom: 4px;
+  margin-bottom: 20px;
 }
 
 .focus {
@@ -69,7 +70,6 @@ summary {
 .write-me {
   animation: time 2s 7s forwards;
   opacity: 0;
-  margin-top: 20px;
 }
 
 .amazing {
