@@ -58,26 +58,9 @@ summary {
 }
 
 .focus {
-  animation: time 2s 2s forwards;
+  animation: time 2s 3s forwards;
   opacity: 0;
 }
-
-.care {
-  animation: time 2s 4s forwards;
-  opacity: 0;
-}
-
-.write-me {
-  animation: time 2s 7s forwards;
-  opacity: 0;
-}
-
-.amazing {
-  margin-top: 100px;
-  animation: time 2s 14s forwards;
-  opacity: 0;
-}
-
 
 @keyframes time {
   0% {opacity: 0;}
