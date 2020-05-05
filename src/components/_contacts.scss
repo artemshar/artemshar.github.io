@@ -1,14 +1,12 @@
 
 .contacts {
-  position: fixed;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   bottom: 0;
   right: 0px;
   padding: 10px;
   width: 100%;
-  background-color: #fff;
   z-index: 100;
 }
 
@@ -28,16 +26,20 @@
 }
 
 .link-item {
-  margin: 0 4px;
+  margin: 0 2px;
 }
 .link-item a {
   display: inline-flex;
+  position: relative;
+  padding: 2px 6px;
 }
 .link-item a svg {
-  color: #91aabb;
-  fill:#91aabb;
+  width: 24px;
+  height: 24px;
+  color: #74dfff;
+  fill:#74dfff;
 }
 .link-item a:hover svg {
-  color: #01546d;
-  fill: #01546d;
+  color: #00b7ff;
+  fill: #00b7ff;
 }

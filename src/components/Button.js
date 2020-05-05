@@ -1,5 +1,5 @@
-import React from 'react';
-import './Button.css'
+import React from 'react'
+import './_button.scss'
 
 const Button = ({children, active}) => {
   return (

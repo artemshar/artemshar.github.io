@@ -31,7 +31,7 @@ summary {
   margin: 0 auto;
   max-width: 900px;
   position: relative;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .main {
@@ -49,7 +49,6 @@ summary {
   margin: 70px auto;
   text-align: left;
   font-size: 18px;
-  color: #5c5c5c;
 }
 
 .msg {

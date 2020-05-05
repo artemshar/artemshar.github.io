@@ -1,7 +1,10 @@
-import React from 'react';
-import Logo from './atomic/Logo.js'
+import React from 'react'
+import Logo from './Logo.js'
 import Nav from './Nav.js'
-import './Header.css';
+import Contacts from './Contacts.js'
+import MobileMenu from './MobileMenu.js'
+import './_header.scss'
+
 
 const Header = () => {
   return (
@@ -9,6 +12,8 @@ const Header = () => {
       <div className="h-card header-top">
         <span className="p-name">Artem Shar</span>
         <Logo />
+        <Contacts className="mobile-hidden"/>
+        <MobileMenu className="desktop-hidden"/>
       </div>
       {/* <Nav/> */}
     </header>

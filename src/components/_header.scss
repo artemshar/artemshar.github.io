@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  padding: 26px 0 16px 0;
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+}
+
+
+.p-name {
+  position: relative;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: 'Lexend Giga', sans-serif;
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
