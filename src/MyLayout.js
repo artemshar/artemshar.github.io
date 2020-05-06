@@ -14,10 +14,13 @@ function MyLayout() {
               I would like people don't fight with interfaces and systems
             </div>
             <div className="focus focus-2">
-              Everything should be easy to use
+              Every digital product should be easy to use
             </div>
             <div className="focus focus-3">
-              Our time, attention, and mentality are very expensive things...
+              Our time, attention and emotions are very expensive things
+            </div>
+            <div className="focus focus-4">
+              And I would like to save more of these resources for real life, communication and something really interesting
             </div>
           </div>
         </div>

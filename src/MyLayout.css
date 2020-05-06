@@ -58,7 +58,7 @@ summary {
 
 .focus {
   opacity: 0;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
 .focus-1 {
@@ -71,6 +71,10 @@ summary {
 
 .focus-3 {
   animation: time 2s 6s forwards;
+}
+
+.focus-4 {
+  animation: time 2s 8s forwards;
 }
 
 @keyframes time {
