@@ -24,10 +24,14 @@ function MyLayout() {
             </div>
             <br/>
             <div className="focus focus-5">
-              I also think about how to find a balance between "automate everything" and "give people valuable work". Charity? Pay for brand loyalty and some activity?
-              I want to find an answer. I want to find an answer. You can say, that sociologists or governments should answer this question, but I think that in 2020 this is an important question for the founders of companies and managers.
-              <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> to start a dialog about this topic.
-            </div>
+              <p>
+                I also think about how to find a balance between "automate everything" and "give people valuable work". Charity? Pay for brand loyalty and some activity?
+                I want to find an answer. I want to find an answer. You can say, that sociologists or governments should answer this question, but I think that in 2020 this is an important question for the founders of companies and managers. 
+              </p>
+              <span>
+                <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> to start a dialog about this topic.
+              </span>
+              </div>
           </div>
         </div>
       </main>
