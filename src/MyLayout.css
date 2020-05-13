@@ -16,6 +16,13 @@ summary {
   box-sizing: border-box;
 }
 
+a {
+  color: #00abff;
+}
+a:visited {
+  color: #c86dff
+}
+
 .hello-text {
   width: 100%; 
   margin: 0 0 20px 0;
