@@ -11,27 +11,27 @@ function MyLayout() {
         <div className="focus-time">
           <div className="msg">
             <div className="focus focus-1">
-              I would like people don't fight with interfaces and systems
+              I would like people don't fight with interfaces and systems, <span className="focus focus-2">
+              because our time, attention and emotions are very expensive things
+            </span>
             </div>
-            <div className="focus focus-2">
-              Every digital product should be easy to use
-            </div>
+            
             <div className="focus focus-3">
-              Our time, attention and emotions are very expensive things
+              Every digital product can be clear and easy to use
             </div>
             <div className="focus focus-4">
-              As <a href="https://www.linkedin.com/in/artemshar/" target="_blanc">Frontend-developer</a>, I spend these resources so that users save them for real life, communication, and something really interesting
+              As <a href="https://www.linkedin.com/in/artemshar/" target="_blanc">Frontend-developer</a>, I want to save people resources for real life, communications, and something more interesting, than screens
             </div>
             <br/>
             <div className="focus focus-5">
-              {/* <p>
-                I also think about how to find a balance between "automate everything" and "give people valuable work". Charity? Pay for brand loyalty and some activity?
-                I want to find an answer. I want to find an answer. You can say, that sociologists or governments should answer this question, but I think that in 2020 this is an important question for the founders of companies and managers. 
-              </p> */}
-              <span>
-                <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> how do you like to spend your time not behind the screen?
-              </span>
-              </div>
+              So...
+            </div>
+            <div className="focus focus-6">
+              <p>
+                How do you spend your time not behind the screen? :) <br/> <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> or follow in <a href="https://www.instagram.com/artem.shar/">Instagram</a>
+              </p>
+              <img style={{width: '320px', marginTop: '20px', borderRadius: '10px'}} src="https://media.giphy.com/media/xFnAObsU5nMrUUC3HX/giphy-downsized-large.gif" alt="dooooog"/>
+            </div>
           </div>
         </div>
       </main>

@@ -62,26 +62,30 @@ summary {
 }
 
 .focus-1 {
-  animation: time 2s 1.5s forwards;
+  animation: time 2s 1s forwards;
 }
 
 .focus-2 {
-  animation: time 2s 3.5s forwards;
+  animation: time 2s 2s forwards;
 }
 
 .focus-3 {
-  animation: time 2s 5s forwards;
+  animation: time 2s 3s forwards;
 }
 
 .focus-4 {
-  animation: time 2s 6.5s forwards;
+  animation: time 2s 4s forwards;
 }
 
 .focus-5 {
-  animation: time 2s 9s forwards;
+  animation: time 2s 8s forwards;
+}
+
+.focus-6 {
+  animation: time 2s 10s forwards;
 }
 
 @keyframes time {
-  0% {opacity: 0;}
+  0% {display: inline-flex; opacity: 0;}
   100% {opacity: 1;}
 }
