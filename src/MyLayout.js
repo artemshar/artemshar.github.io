@@ -11,11 +11,9 @@ function MyLayout() {
         <div className="focus-time">
           <div className="msg">
             <div className="focus focus-1">
-              I would like people don't fight with interfaces and systems, <span className="focus focus-2">
-              because our time, attention and emotions are very expensive things
-            </span>
+              <span>I would like people don't fight with interfaces and systems</span>
+              <span className="focus focus-2">, because our time, attention and emotions are very expensive things</span>
             </div>
-            
             <div className="focus focus-3">
               Every digital product can be clear and easy to use
             </div>

@@ -64,6 +64,7 @@ a:visited {
 }
 
 .focus {
+  max-width: 600px;
   opacity: 0;
   margin-bottom: 16px;
 }
@@ -73,23 +74,23 @@ a:visited {
 }
 
 .focus-2 {
-  animation: time 2s 2s forwards;
-}
-
-.focus-3 {
   animation: time 2s 3s forwards;
 }
 
+.focus-3 {
+  animation: time 2s 5.5s forwards;
+}
+
 .focus-4 {
-  animation: time 2s 4s forwards;
+  animation: time 2s 7.5s forwards;
 }
 
 .focus-5 {
-  animation: time 2s 8s forwards;
+  animation: time 2s 11s forwards;
 }
 
 .focus-6 {
-  animation: time 2s 10s forwards;
+  animation: time 2s 12s forwards;
 }
 
 @keyframes time {
