@@ -26,7 +26,7 @@ function MyLayout() {
             </div>
             <div className="focus focus-6">
               <p>
-                How do you spend your time not behind the screen? :) <br/> <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> or follow in <a href="https://www.instagram.com/artem.shar/">Instagram</a>
+                How do you spend your time not at the screen? :) <br/> <a href="https://twitter.com/artem_shar" target="_blanc">Tweet me</a> or follow in <a href="https://www.instagram.com/artem.shar/">Instagram</a>
               </p>
               <img style={{width: '320px', marginTop: '20px', borderRadius: '10px'}} src="https://media.giphy.com/media/xFnAObsU5nMrUUC3HX/giphy-downsized-large.gif" alt="dooooog"/>
             </div>
