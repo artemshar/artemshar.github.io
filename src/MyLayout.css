@@ -93,6 +93,10 @@ a:visited {
   animation: time 2s 12s forwards;
 }
 
+.focus-7 {
+  animation: time 2s 13s forwards;
+}
+
 @keyframes time {
   0% {display: inline-flex; opacity: 0;}
   100% {opacity: 1;}
