@@ -4,19 +4,52 @@
   justify-self: center;
   position: relative;
   margin: 4px 10px 4px 30px;
+  cursor: pointer;
+  transition: .25s;
   
   .logo-svg {
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     z-index: 3;
   }
 
-  &:hover {
+  &.more-light-1 {
     &:before {
-      filter: brightness(1.2);
+      box-shadow:  
+        70px -60px 70px 10px rgb(9, 255, 1), 
+        -40px -40px 50px 10px rgb(0, 162, 255), 
+        0px -10px 80px 40px rgb(4, 255, 255);
     }
   }
+
+  &.more-light-2 {
+    &:before {
+      box-shadow:  
+        20px -60px 80px 30px rgb(208, 255, 1), 
+        0px -10px 30px 40px rgb(255, 117, 4);
+    }
+  }
+
+  &.more-light-3 {
+    &:before {
+      box-shadow:  
+        20px -10px 80px 30px rgb(0, 199, 166), 
+        0px -100px 80px 80px rgb(255, 4, 4),
+        10px -60px 80px 30px rgb(1, 217, 255);
+    }
+  }
+
+  &.more-light-4 {
+    &:before {
+      box-shadow:  
+        20px -10px 50px 30px rgb(245, 245, 245), 
+        0px -10px 90px 60px rgb(19, 208, 255),
+        10px -60px 50px 30px rgb(1, 217, 255),
+        -20px 10px 50px 30px rgb(245, 245, 245);
+    }
+  }
+
 
   &:before {
     content: '';
@@ -39,14 +72,30 @@
   }
 
   
-  .logo-circle-3 {
-    fill: rgb(250, 250, 250);
-  } 
-  .logo-circle-2 {
-    fill: #444444;
-  } 
+
   .logo-circle-1 {
     fill: #4d4d4d;
+    transition: .3s;
+  }
+  .logo-circle-2 {
+    fill: #444444;
+    transition: .5s;
+  }
+  .logo-circle-3 {
+    transition: .7s;
+    fill: #fafafa;
+  } 
+
+  &:hover {
+    .logo-circle-1 {
+      fill: #ffffff;
+    }
+    .logo-circle-2 {
+      fill: #e7e7e7;
+    }
+    .logo-circle-3 {
+      fill: #585858;
+    }
   }
 }
 
