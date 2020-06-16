@@ -27,24 +27,15 @@
     &:before {
       box-shadow:  
         20px -60px 80px 30px rgb(208, 255, 1), 
-        0px -10px 30px 40px rgb(255, 117, 4);
+        0px -20px 60px 40px rgb(255, 117, 4);
     }
   }
 
   &.more-light-3 {
     &:before {
       box-shadow:  
-        20px -10px 80px 30px rgb(0, 199, 166), 
-        0px -100px 80px 80px rgb(255, 4, 4),
-        10px -60px 80px 30px rgb(1, 217, 255);
-    }
-  }
-
-  &.more-light-4 {
-    &:before {
-      box-shadow:  
-        20px -10px 50px 30px rgb(245, 245, 245), 
-        0px -10px 90px 60px rgb(19, 208, 255),
+        20px -70px 50px 30px rgb(245, 245, 245), 
+        0px -30px 100px 60px rgb(19, 208, 255),
         10px -60px 50px 30px rgb(1, 217, 255),
         -20px 10px 50px 30px rgb(245, 245, 245);
     }
@@ -67,35 +58,17 @@
     pointer-events: none;
     animation: time 2s 1.4s forwards;
     opacity: 0;
-    filter: brightness(1);
     transition: .5s;
   }
-
-  
 
   .logo-circle-1 {
     fill: #4d4d4d;
-    transition: .3s;
   }
   .logo-circle-2 {
     fill: #444444;
-    transition: .5s;
   }
   .logo-circle-3 {
-    transition: .7s;
     fill: #fafafa;
-  } 
-
-  &:hover {
-    .logo-circle-1 {
-      fill: #ffffff;
-    }
-    .logo-circle-2 {
-      fill: #e7e7e7;
-    }
-    .logo-circle-3 {
-      fill: #585858;
-    }
   }
 }
 

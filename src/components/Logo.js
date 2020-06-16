@@ -7,7 +7,7 @@ const Logo = () => {
   const [ count, setCount ] = useState(1)
 
   const handleClick = () => {
-    if (count <= 4 ) {
+    if (count <= 3 ) {
       setCount(count + 1)
     } else {
       setCount(1)
