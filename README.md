@@ -9,6 +9,6 @@ In the **develop** branch
 ### Deploy
 From the **master** branch
 
-For 2 steps:
-- yarn build
-- yarn deploy
+### Deploy commands (from develop branch)
+1 yarn build
+2 yarn deploy
