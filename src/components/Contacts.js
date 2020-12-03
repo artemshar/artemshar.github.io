@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import cn from 'classnames'
-import './_contacts.scss'
+import './Contacts.scss'
 
 
 const Contacts = ({className}) => {

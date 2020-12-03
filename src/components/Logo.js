@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import cn from 'classnames'
-import './_logo.scss'
+import './Logo.scss'
 
 const Logo = () => {
   const [ lightClass, setLightClass ] = useState('')
-  const [ count, setCount ] = useState(1)
+  const [ count, setCount ] = useState(2) // Default light
 
   const handleClick = () => {
     if (count <= 3 ) {

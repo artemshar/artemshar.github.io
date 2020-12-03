@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import cn from 'classnames'
 import Contacts from './Contacts'
-import './_mobile-menu.scss'
+import './MobileMenu.scss'
 
 
 const MobileMenu = ({ className }) => {
@@ -18,7 +18,7 @@ const MobileMenu = ({ className }) => {
       </div>
       <div className="menu-content">
         <h4 className="label">Contacts</h4>
-        <Contacts />
+        <Contacts className="dark"/>
       </div>
     </div>
   );
