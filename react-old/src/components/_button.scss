@@ -1,0 +1,40 @@
+.nav-btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+  .flat {
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+    background-color: #444444;
+    margin-right: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .1s;
+    font-size: 16px;
+  }
+  
+  &.active {
+    background-color: #00a3c0;
+  }
+
+  &:hover {
+    background-color: #00c7eb;
+    color: rgb(255, 255, 255);
+  }
+}
+
+/* neumorphism  */
+.nav-btn.neu {
+  color: rgb(44, 44, 44);
+  margin: 4px 4px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #8c8c8c;
+}
+.nav-btn.neu.active {
+  box-shadow: inset 3px 3px 3px -1px #8c8c8c;
+}
