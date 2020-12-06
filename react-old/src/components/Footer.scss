@@ -1,0 +1,10 @@
+@import '../styles/vars.scss';
+
+.footer {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $dark-gray;
+    overflow: hidden;
+}
