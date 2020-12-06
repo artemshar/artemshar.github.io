@@ -98,10 +98,6 @@ a:visited {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
-.mini-avatar {
-  border: 2px solid #00ff61;
-  border-radius: 50%;
-}
 
 @media (max-width: 600px) {
   .p-name {
