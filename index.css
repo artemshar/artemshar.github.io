@@ -12,7 +12,7 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--titles-color);
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 15px;
 }
 
@@ -45,10 +45,20 @@ summary {
 }
 
 a {
-  color: #00abff;
+  color: #209bff;
 }
 a:visited {
-  color: #ff76e8;
+  color: #3b3a7c;
+}
+
+b {
+  font-weight: 500;
+}
+
+section {
+  min-height: 70vh;
+  padding-top: 100px;
+  margin-bottom: 80px;
 }
 
 .wrapper {
@@ -79,7 +89,9 @@ a:visited {
 }
 
 .main {
-  margin-top: 40px;
+  background: #fcfcfc;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .header,
@@ -98,6 +110,17 @@ a:visited {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
 }
+
+
+.card {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fcfcfc;
+  box-shadow:  5px 5px 22px #cfcfcf, 
+               -5px -5px 22px #ffffff;
+}
+
+
 
 @media (max-width: 600px) {
   .p-name {
