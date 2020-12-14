@@ -116,6 +116,8 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0;
+  margin-left: 8px;
 }
 .nav-list li {
   list-style: none;
