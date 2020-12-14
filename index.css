@@ -48,7 +48,7 @@ a {
   color: #209bff;
 }
 a:visited {
-  color: #3b3a7c;
+  color: #209bff;
 }
 
 b {
@@ -104,11 +104,23 @@ section {
 .h-card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 .p-name {
   margin-right: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list li {
+  list-style: none;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 
