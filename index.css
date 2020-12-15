@@ -146,7 +146,7 @@ section {
   background: #fcfcfc;
   box-shadow:  5px 5px 10px #eaeaea, 
                -5px -5px 10px #ffffff;
-  border: 2px solid #f5f5f5;
+  border: 1px solid #7e96a1;
 }
 
 .news-card .date {
