@@ -1,7 +1,7 @@
 :root {
   --color-bg: #fff;
   --color-font-main: #252525;
-  --titles-color: #292929;
+  --titles-color: #363636;
   --dark-gray: #202020;
 }
 
@@ -72,7 +72,7 @@ section {
   background-color: #fff;
   padding-bottom: 15px;
   padding-top: 15px;
-  box-shadow: 0px 5px 5px -3px rgba(183, 183, 183, 0.53);
+  box-shadow: 5px 5px 10px #eaeaea;
   z-index: 1;
 }
 
@@ -125,12 +125,23 @@ section {
 }
 
 
-.card {
-  padding: 12px;
+.news-card {
+  position: relative;
+  margin-top: 45px;
+  padding: 20px 10px;
   border-radius: 8px;
   background: #fcfcfc;
-  box-shadow:  5px 5px 22px #cfcfcf, 
-               -5px -5px 22px #ffffff;
+  box-shadow:  5px 5px 10px #eaeaea, 
+               -5px -5px 10px #ffffff;
+  border: 2px solid #f5f5f5;
+}
+
+.news-card .date {
+  position: absolute;
+  right: 10px;
+  top: -20px;
+  font-size: 12px;
+  color: #8a8a8a;
 }
 
 .section-contacts li {
