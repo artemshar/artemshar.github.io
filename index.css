@@ -146,13 +146,13 @@ section {
   background: #fcfcfc;
   box-shadow:  5px 5px 10px #eaeaea, 
                -5px -5px 10px #ffffff;
-  border: 1px solid #7e96a1;
+  border: 2px solid #eaeaea;
 }
 
 .news-card .date {
   position: absolute;
-  left: 10px;
-  top: -20px;
+  right: 10px;
+  bottom: -20px;
   font-size: 12px;
   color: #8a8a8a;
 }

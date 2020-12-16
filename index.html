@@ -42,12 +42,12 @@
             <div class="container">
                 <section id="news">
                     <h3>
-                        News / Posts:
+                        Latest news:
                     </h3>
                     <div class="news-card">
-                        <div class="date">14.12.2020</div>
+                        <div class="date">16.12.2020</div>
                         <div>
-                            What books did you read in 2020? => <a href="#contacts">contacts</a>
+                            <span>There are <span id="ny-left-date" style="color:blueviolet;"></span> left until the new 2021 year.</span>
                         </div>
                     </div>
                     <!-- <div class="card">
@@ -208,5 +208,26 @@
             </div>
         </footer>
     </div>
+    <script language="JavaScript">
+        const NYtimer = () => { 
+            let today = new Date();
+            const ny2021 = new Date("January 1, 2021");
+            const msPerDay = 24*60*60*1000;
+            const daysLeft = Math.round((ny2021.getTime() - today.getTime())/msPerDay);
+            let dayname = "";
+            const ds = "" + daysLeft;
+            const dd = parseInt(ds.substr(ds.length-1))
+            //Определяем правильность написания
+            if((dd==1)) {
+                dayname=" day"
+            } else {
+                dayname=" days"
+            }
+            //Выводим надпись в документ
+            const element = document.getElementById('ny-left-date');
+            element.innerText = daysLeft+dayname;
+        }
+        NYtimer()
+    </script>
 </body>
 </html>
