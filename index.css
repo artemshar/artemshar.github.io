@@ -138,10 +138,10 @@ section {
 }
 
 
-.news-card {
+.post-card {
   position: relative;
   margin-top: 45px;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 20px 20px 20px;
   border-radius: 8px;
   background: #fcfcfc;
   box-shadow:  5px 5px 10px #eaeaea, 
@@ -149,7 +149,7 @@ section {
   border: 2px solid #eaeaea;
 }
 
-.news-card .date {
+.post-card .date {
   position: absolute;
   right: 10px;
   bottom: -20px;

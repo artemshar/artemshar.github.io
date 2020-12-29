@@ -24,7 +24,7 @@
                 <!-- <a style="margin-left: 20px;" href="https://www.notion.so/artemshar/c278dfe1e6074c9c9387fd316a68acc7" target="_blanc">Books (RU)</a> -->
                 <ul class="nav-list">
                     <li>
-                        <a href="#news">News</a>
+                        <a href="#posts">Posts</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -40,26 +40,24 @@
         </header>
         <main class="main">
             <div class="container">
-                <section id="news">
+                <section id="posts">
                     <h3>
-                        Latest news:
+                        Posts:
                     </h3>
-                    <div class="news-card">
-                        <div class="date">16.12.2020</div>
+                    <div class="post-card">
+                        <div class="date">28.12.2020</div>
                         <div>
-                            <span>There are <span id="ny-left-date" style="color:blueviolet;"></span> left until the new 2021 year.</span>
+                            I published the track that I made before the upcoming new year 2010. Enjoy =)
                         </div>
+                        <br>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/955402543&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/2katz" title="2katz" target="_blank" style="color: #cccccc; text-decoration: none;">2katz</a> · <a href="https://soundcloud.com/2katz/2katz-mechanism-happy-new-year" title="2Katz - Mechanism Happy New Year" target="_blank" style="color: #cccccc; text-decoration: none;">2Katz - Mechanism Happy New Year</a></div>
                     </div>
-                    <!-- <div class="card">
-                        I started an annual book blog! So far, only in Russian.
-                        <a href="https://www.notion.so/artemshar/c278dfe1e6074c9c9387fd316a68acc7" target="_blanc">Check on the link.</a>
-                    </div> -->
                 </section>
                 <section id="about">
                     <h3>
                         About me
                     </h3>
-                    <p>Hi! My name is Artem, I'm from Saint-Petersburg, Russia.</p>
+                    <p>Hi! My name is Artem.</p>
                     <details>
                         <summary>Career</summary>
                         <div class="p-note" style="max-width: 600px;">
@@ -208,26 +206,5 @@
             </div>
         </footer>
     </div>
-    <script language="JavaScript">
-        const NYtimer = () => { 
-            let today = new Date();
-            const ny2021 = new Date("January 1, 2021");
-            const msPerDay = 24*60*60*1000;
-            const daysLeft = Math.round((ny2021.getTime() - today.getTime())/msPerDay);
-            let dayname = "";
-            const ds = "" + daysLeft;
-            const dd = parseInt(ds.substr(ds.length-1))
-            //Определяем правильность написания
-            if((dd==1)) {
-                dayname=" day"
-            } else {
-                dayname=" days"
-            }
-            //Выводим надпись в документ
-            const element = document.getElementById('ny-left-date');
-            element.innerText = daysLeft+dayname;
-        }
-        NYtimer()
-    </script>
 </body>
 </html>
