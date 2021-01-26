@@ -10,6 +10,14 @@ html {
   background-color: var(--color-bg);
 }
 
+html[lang="en"] [lang="ru"]{
+  display: none;
+}
+
+html[lang="ru"] [lang="en"]{
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--titles-color);
 }
@@ -121,8 +129,8 @@ section {
   justify-content: space-between;
 }
 .p-name {
-  margin-right: 20px;
-  font-family: 'Montserrat', sans-serif;
+  margin-left: 20px;
+  /* font-family: 'Montserrat', sans-serif; */
   font-size: 24px;
 }
 .nav-list {
@@ -160,6 +168,14 @@ section {
 
 .section-contacts li {
   font-size: 16px;
+}
+
+.switch-lang-buttons {
+  display: flex;
+}
+
+.switch-lang-buttons {
+  height: 25px;
 }
 
 @media (max-width: 600px) {

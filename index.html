@@ -1,119 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="theme-color" content="#FFFFFF"/>
-    <meta name="description" content="Artem Shar: personal site"/>
-    <link rel="manifest" href="./assets/favicon/site.webmanifest"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="description" content="Artem Shar: personal site" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Artem Shar, personal site</title>
+    <title lang="EN">Artem Shar, personal site</title>
+    <title lang="RU">Артём Шарюков, личный сайт</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
                 <div class="h-card">
-                    <a href="https://artemshar.space/" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
-                        <span class="p-name" title="Artem Shar">Artem Shar</span> 
-                        <img  class="mini-avatar" width="40px" height="40px" src="../assets/favicon/android-chrome-192x192.png" alt="Me and the Finish Gulf on background">
+                    <a href="https://artemshar.space/"
+                        style="text-decoration: none; color: inherit; display: flex; align-items: center;">
+                        <img class="mini-avatar" width="40px" height="40px"
+                        src="../assets/favicon/android-chrome-192x192.png"
+                        alt="Me and the Finish Gulf on background">
+                        <span lang="EN" class="p-name" title="Artem Shar">Artem Shar</span>
+                        <span lang="RU" class="p-name" title="Артём Шарюков">Артём Шарюков</span>
+
                     </a>
                 </div>
                 <!-- <a style="margin-left: 20px;" href="https://www.notion.so/artemshar/c278dfe1e6074c9c9387fd316a68acc7" target="_blanc">Books (RU)</a> -->
                 <ul class="nav-list">
-     
                     <li>
-                        <a href="#about">About</a>
+                        <a lang="EN" href="#about">About</a>
+                        <a lang="RU" href="#about">Обо мне</a>
                     </li>
                     <li>
-                        <a href="#help">Talks</a>
+                        <a lang="EN" href="#help">Talks</a>
+                        <a lang="RU" href="#help">Общение</a>
                     </li>
                     <li>
-                        <a href="#contacts">Contacts</a>
+                        <a lang="EN" href="#contacts">Contacts</a>
+                        <a lang="RU" href="#contacts">Контакты</a>
                     </li>
                 </ul>
+
+                <form>
+                    <select onclick="changeLang(value)" class="switch-lang-buttons" name="switch-lang" id="pet-select">
+                        <option value="en" selected>EN</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </form>
+
             </div>
         </header>
         <main class="main">
             <div class="container">
-       
+
                 <section id="about">
-                    <h3>
+                    <h3 lang="EN">
                         About me
                     </h3>
-                    <p>Hi! My name is Artem.</p>
-                    <details>
-                        <summary>Career</summary>
+                    <h3 lang="RU">
+                        Обо мне
+                    </h3>
+                    <p lang="EN">Hi! My name is Artem.</p>
+                    <p lang="RU">Привет! Меня зовут Артём.</p>
+                    <details open>
+                        <summary>
+                            <span lang="EN">Career</span>
+                            <span lang="RU">Карьера</span>
+                        </summary>
                         <div class="p-note" style="max-width: 600px;">
-                            <p>
-                                I'm <span class="p-job-title"> <b>Frontend / Web developer</b> since 2016.</span>
+
+                            <p lang="EN">
+                                I'm <span class="p-job-title"> <b>Frontend / Web developer</b>.</span>
                             </p>
-                            <p>
-                                I have worked on projects of such companies as <b>Mercer</b>, <b>Hotelplan</b>, <b>Emergn</b>, <b>Caxton Associates</b> and others.
+                            <p lang="RU">
+                                Я <span class="p-job-title"> <b>Frontend / Web-разработчик</b>.</span>
                             </p>
-                            <p>
-                                At the moment, I'm Frontend developer at <a href="https://unicornplatform.com/"> <b>Unicorn Platform</b></a> - the great startup that I believe in!
+
+                            <p lang="EN">
+                                I have worked on projects of such companies as <b>Mercer</b>, <b>Hotelplan</b>,
+                                <b>Emergn</b>, <b>Caxton Associates</b> and others.
                             </p>
-                            <p>
-                                I like simple and accessible interfaces. I spend a lot of time at my screen at my work so that other people save their time, attention, and emotions for live communication, effective business, creativity, and whatever that more interesting than fighting with bad apps. I do things for people.
+                            <p lang="RU">
+                                Работал над проектами таких компаний как <b>Mercer</b>, <b>Hotelplan</b>, <b>Emergn</b>, <b>Caxton Associates</b> и других.
                             </p>
-                            <p>
+
+                            <p lang="EN">
+                                I like simple and accessible interfaces. The meaning of my work
+                                so that other people save their time, attention, and emotions for  live communication, solutions to business problems, 
+                                creativity, and whatever that more interesting than fighting with
+                                bad apps. I do things for people.
+                            </p>
+                            <p lang="RU">
+                                Мне нравятся простые и доступные интерфейсы. Смысл моей работы в том, чтобы другие люди экономили свое время, внимание и эмоции для живого общения, решения бизнес-задач, творчества и всего того, что интереснее, чем борьба с плохими приложениями. Я делаю вещи для людей. 
+                            </p>
+
+                            <p lang="EN">
                                 I'm interested in the capabilities of technologies, but first of all their application and real benefits.
                             </p>
-                            <p>
-                                UX includes questions about learning, communication, psychology. These are also my big interests.
+                            <p lang="RU">
+                                Меня интересуют возможности технологий, но в первую очередь их применение и реальная польза.
                             </p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Hobbies</summary>
-                        <div>
-                            <p>
-                                In 2020, I rediscovered <b>film photography</b>.
-                                I like active sports: in a summer, I like to play <b>football</b>, <b>beach volleyball</b> and <b>running</b>.
-                                Winter is <b>gym</b> time.
-                                I like to <b>study</b>: at the moment I read <b>books</b> about <b>the human brain and behavior</b>, <b>psychology</b>, and <b>self-development</b>.
-                                I love <b>music</b> very much. I like to be in <b>nature</b>, especially by the water.
-                            </p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Facts of my bio</summary>
-                            <ul>
-                                <li>
-                                    I have a bachelor's degree in <a href="https://en.wikipedia.org/wiki/Business_informatics" target="_blanc">Business informatics</a>
+
+                            <h4 lang="EN">Education</h4>
+                            <h4 lang="RU">Образование</h4>
+                            <ul >
+                                <li lang="EN">
+                                    2017 - Bachelor's degree in <a
+                                        href="https://en.wikipedia.org/wiki/Business_informatics" target="_blanc">Business
+                                        informatics</a>
                                 </li>
-                                <li>
-                                    I worked as a projectionist for 2 years. I got this profession in <a href="https://en.gukit.ru/" target="_blanc">the film technical college</a>
-                                </li>
-                                <li>
-                                    From 16 to 20 years old I was addicted to electronic music production
-                                </li>
-                                <li>
-                                    At the age of 18, I served for one year in the Russian army (by conscription)
-                                </li>
-                                <li>
-                                    At 15 I got my first full-time job in summer
+                                <li lang="RU">
+                                    2017 - бакалавр <a
+                                        href="https://en.wikipedia.org/wiki/Business_informatics" target="_blanc">Бизнес-информатики</a>
                                 </li>
                             </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>
+                            <span lang="EN">Hobbies</span>
+                            <span lang="RU">Хобби</span>
+                        </summary>
+                        <div>
+                            <p lang="EN">
+                                In 2020, I rediscovered <b>film photography</b>.
+                                I like active sports: <b>football</b>, <b>beach
+                                    volleyball</b> and <b>running</b>.
+                                I like to study: at the moment I'm very interested in <b>cognitive sciences</b>.
+                                I love <b>music</b> very much! I like to be in <b>nature</b>.
+                            </p>
+                            <p lang="RU">
+                                В 2020 году я заново открыл для себя <b>плёночную фотографию</b>.
+                                Люблю спортик: <b>футбол</b>, <b>пляжный волейбол</b> и <b>бегать</b>.
+                                Мне нравится учиться: на данный момент очень интересуют когнитивные науки</b>.
+                                Я очень люблю <b>музыку</b>! И наконец, мне нравится бывать на <b>природе</b>.
+                            </p>
+                        </div>
                     </details>
                 </section>
                 <section id="help">
-                    <p>The more we talk about our affairs, the better we become at them.</p>
+                    <p lang="EN">The more we talk about our affairs, the better we become at them.</p>
                     <h3>How can I help you?</h3>
                     <p>
-                        Having studied my site, you already know about my interests. <b>Is there anything I can do for you?</b>
+                        Having studied my site, you already know about my interests. <b>Is there anything I can do for
+                            you?</b>
                     </p>
                     <p>
-                        I can advise you in any area that I mention on this site to the extent that I can. This can be a chat conversation, call or meeting.
+                        I can advise you in any area that I mention on this site to the extent that I can. This can be a
+                        chat conversation, call or meeting.
                     </p>
                     <p>
                         The most convenient way for me to communicate is in
-                        <a class="u-url" href="https://t.me/artemshar" target="_blanc" rel="me" target="_blanc" title="t.me/artemshar">
+                        <a class="u-url" href="https://t.me/artemshar" target="_blanc" rel="me" target="_blanc"
+                            title="t.me/artemshar">
                             Telegram
-                        </a> or by email - <a class="u-email" href="mailto:hi@artemshar.space" target="_blanc" title="hi@artemshar.space" rel="me">
+                        </a> or by email - <a class="u-email" href="mailto:hi@artemshar.space" target="_blanc"
+                            title="hi@artemshar.space" rel="me">
                             hi@artemshar.space
                         </a> but not only. See my <a href="#contacts">contacts</a>.
                     </p>
@@ -121,7 +166,8 @@
                     <br>
                     <h3>Can you help me?</h3>
                     <p>
-                        Or is there anything you can do to help me? For example, I always welcome help in improving my English skills.
+                        Or is there anything you can do to help me? For example, I always welcome help in improving my
+                        English skills.
                     </p>
                 </section>
             </div>
@@ -131,17 +177,20 @@
         <footer class="footer">
             <div class="container">
                 <section id="contacts" class="section-contacts">
-                    <h3>Contacts</h3>
+                    <h3 data-lang="EN">Contacts</h3>
+                    <h3 data-lang="RU">Контакты</h3>
                     <ul>
                         <li>
-                            <span>Email:</span> 
-                            <a class="u-email" href="mailto:hi@artemshar.space" target="_blanc" title="hi@artemshar.space" rel="me">
+                            <span>Email:</span>
+                            <a class="u-email" href="mailto:hi@artemshar.space" target="_blanc"
+                                title="hi@artemshar.space" rel="me">
                                 hi@artemshar.space
                             </a>
                         </li>
                         <li>
                             <span>Telegram:</span>
-                            <a class="u-url" href="https://t.me/artemshar" target="_blanc" rel="me" target="_blanc" title="t.me/artemshar">
+                            <a class="u-url" href="https://t.me/artemshar" target="_blanc" rel="me" target="_blanc"
+                                title="t.me/artemshar">
                                 t.me/artemshar
                             </a>
                         </li>
@@ -178,7 +227,7 @@
                         </li>
                     </ul>
                 </section>
-                
+
                 <br>
                 <br>
 
@@ -186,7 +235,9 @@
                     <h3>
                         Let's dog gif!
                     </h3>
-                    <img style="width: 320px; margin-top: 20px; border-radius: 10px;" src="https://media.giphy.com/media/xFnAObsU5nMrUUC3HX/giphy-downsized-large.gif" alt="dooooog"/>
+                    <img style="width: 320px; margin-top: 20px; border-radius: 10px;"
+                        src="https://media.giphy.com/media/xFnAObsU5nMrUUC3HX/giphy-downsized-large.gif"
+                        alt="dooooog" />
                     <br>
                     <br>
                 </section>
@@ -194,5 +245,11 @@
         </footer>
 
     </div>
+    <script>
+        const changeLang = (value) => {
+            document.documentElement.lang = value;
+        }
+    </script>
 </body>
+
 </html>
