@@ -129,9 +129,9 @@ section {
   justify-content: space-between;
 }
 .p-name {
-  margin-left: 20px;
+  margin-left: 14px;
   /* font-family: 'Montserrat', sans-serif; */
-  font-size: 14px;
+  font-size: 20px;
 }
 .nav-list {
   display: flex;
@@ -175,7 +175,7 @@ section {
 .switch-lang-buttons {
   display: flex;
   height: 25px;
-  margin-top: -40px;
+  font-size: 12px;
 }
 
 @media (max-width: 600px) {
