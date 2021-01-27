@@ -24,7 +24,7 @@
                         src="../assets/favicon/android-chrome-192x192.png"
                         alt="Me and the Finish Gulf on background">
                         <span lang="EN" class="p-name" title="Artem Shar">Artem Shar</span>
-                        <span lang="RU" class="p-name" title="Артём Шарюков">Артём Шарюков</span>
+                        <span lang="RU" class="p-name" title="Артём Шарюков">Артём Шар</span>
 
                     </a>
                 </div>
@@ -44,8 +44,8 @@
                     </li>
                 </ul>
 
-                <form>
-                    <select onclick="changeLang(value)" class="switch-lang-buttons" name="switch-lang" id="pet-select">
+                <form name="lang">
+                    <select onclick="changeLang()" class="switch-lang-buttons" name="switch_lang" id="pet-select">
                         <option value="en" selected>EN</option>
                         <option value="ru">RU</option>
                     </select>
@@ -65,7 +65,7 @@
                     </h3>
                     <p lang="EN">Hi! My name is Artem.</p>
                     <p lang="RU">Привет! Меня зовут Артём.</p>
-                    <details open>
+                    <details>
                         <summary>
                             <span lang="EN">Career</span>
                             <span lang="RU">Карьера</span>
@@ -177,8 +177,8 @@
         <footer class="footer">
             <div class="container">
                 <section id="contacts" class="section-contacts">
-                    <h3 data-lang="EN">Contacts</h3>
-                    <h3 data-lang="RU">Контакты</h3>
+                    <h3 lang="EN">Contacts</h3>
+                    <h3 lang="RU">Контакты</h3>
                     <ul>
                         <li>
                             <span>Email:</span>
@@ -244,8 +244,12 @@
 
     </div>
     <script>
-        const changeLang = (value) => {
-            document.documentElement.lang = value;
+        const changeLang = () => {
+            let form = document.forms.lang;
+            let switch_lang_elem = form.elements.switch_lang;        
+            document.documentElement.lang = switch_lang_elem.value;
+
+            console.log(switch_lang_elem.value);
         }
     </script>
 </body>

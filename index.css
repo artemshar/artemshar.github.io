@@ -131,14 +131,16 @@ section {
 .p-name {
   margin-left: 20px;
   /* font-family: 'Montserrat', sans-serif; */
-  font-size: 24px;
+  font-size: 14px;
 }
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding-left: 0;
   margin-left: 8px;
+  margin-right: 25px;
+  flex-grow: 1;
 }
 .nav-list li {
   list-style: none;
@@ -172,10 +174,8 @@ section {
 
 .switch-lang-buttons {
   display: flex;
-}
-
-.switch-lang-buttons {
   height: 25px;
+  margin-top: -40px;
 }
 
 @media (max-width: 600px) {
