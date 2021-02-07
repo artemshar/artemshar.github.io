@@ -45,10 +45,8 @@
                 </ul>
 
                 <form name="lang">
-                    <select onclick="changeLang()" class="switch-lang-buttons" name="switch_lang" id="pet-select">
-                        <option value="en" selected>EN</option>
-                        <option value="ru">RU</option>
-                    </select>
+                    <span onclick="changeLang('ru')" class="switch-lang_btn ru">RU</span>
+                    <span onclick="changeLang('en')" class="switch-lang_btn en">EN</span>
                 </form>
 
             </div>
@@ -237,10 +235,8 @@
 
     </div>
     <script>
-        const changeLang = () => {
-            let form = document.forms.lang;
-            let switch_lang_elem = form.elements.switch_lang;        
-            document.documentElement.lang = switch_lang_elem.value;
+        const changeLang = (value) => {     
+            document.documentElement.lang = value;
         }
     </script>
 </body>

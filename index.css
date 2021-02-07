@@ -173,10 +173,17 @@ section {
   margin-bottom: 8px;
 }
 
-.switch-lang-buttons {
-  display: flex;
-  height: 25px;
-  font-size: 12px;
+.switch-lang_btn {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+html[lang="en"] .switch-lang_btn.en {
+  border-bottom: solid 1px #000;
+}
+
+html[lang="ru"] .switch-lang_btn.ru {
+  border-bottom: solid 1px #000;
 }
 
 @media (max-width: 600px) {
