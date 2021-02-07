@@ -94,7 +94,6 @@ section {
   padding-bottom: 15px;
   padding-top: 15px;
   box-shadow: 5px 5px 10px #eaeaea;
-  border-bottom: 1px solid #000000;
   z-index: 1;
 }
 
@@ -137,6 +136,7 @@ section {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   padding-left: 0;
   margin-left: 8px;
   margin-right: 25px;
@@ -170,6 +170,7 @@ section {
 
 .section-contacts li {
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 .switch-lang-buttons {
@@ -182,6 +183,7 @@ section {
   .p-name {
     display: none;
   }
+
   .nav-list li {
     font-size: 16px;
   }
