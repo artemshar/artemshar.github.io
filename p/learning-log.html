@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script> -->
+ <!-- <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script> -->
+ <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+ <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.12.3/antd.min.js" integrity="sha512-rDnul7w0yOHbU7APc95arF5ae5lCN4HAncTuP4ZQy4adA9pHXTOytebq9IPAACwPBwPxMGjQ3pTUNAgtKsdIRg==" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.12.3/antd.compact.min.css" integrity="sha512-sBca4y8ILGlnFmRxnA8R1CNkc1AcaLnqW2hD8JrED+GgJucs6eEro/U0i2SRN9XwEkVFuYaQ76cFv4oQ3bUeww==" crossorigin="anonymous" />
+ <title>Logger</title>
+ <style>
+   #log_container {
+     padding-top: 100px;
+     padding-right: 100px;
+   }
+ </style>
+</head>
+<body>
+  <!-- We will put our React component inside this div. -->
+  <div id="log_container"></div>
+
+  <script type="text/babel">
+    'use strict';
+    const { useState } = React;
+    const Timeline = window['antd'].Timeline;
+    const Radio = window['antd'].Radio;
+
+    const LOG_DATA = [
+      {
+        title: `Offline cource follow the book "Red pill" by Andrey Kurpatov`,
+        description: 'Improving thinking. The study of cognitive distortions. 16 offline classes twice a week in 6 large people group.',
+        tags: ['thinking', 'brain', 'cognitive science', 'evolution', 'cource', 'offline'],
+        date: '16.12.2020 - 13.02.2021'
+      },
+      {
+        title: `Book: "12 Rules for Life: An Antidote to Chaos" by Jordan Peterson`,
+        description: 'One of the best philosophical and practical life books that I have read',
+        tags: ['thinking  ', 'philosophy', 'psychology', 'evolution', 'book'],
+        date: '11.2020 - 02.2021'
+      },
+      {
+        title: `Book: "The 7 Habits of Highly Effective People" by Stephen Covey`,
+        description: 'In The 7 Habits of Highly Effective People, author Stephen R. Covey presents a holistic, integrated, principle-centered approach for solving personal and professional problems. With penetrating insights and pointed anecdotes, Covey reveals a step-by-step pathway for living with fairness, integrity, service, and human dignity--principles that give us the security to adapt to change and the wisdom and power to take advantage of the opportunities that change creates.',
+        tags: ['self-help', 'motivational', 'management', 'philosophy', 'book'],
+        date: '06.2020 - 08.2020'
+      },
+    ]
+
+    const e = React.createElement;
+
+    class LogItem extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { };
+      }
+
+      render() {
+        let tags = this.props.tags.map((item) => {
+            return (<span key={item}> {item} </span>)
+        });
+        
+
+        return (
+          <div>
+            <div>{this.props.description}</div>
+            <div>{tags}</div>
+          </div>
+        )
+      }
+    }
+
+
+    class LoggerContainer extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { }
+      }
+
+      render() {
+        const items = LOG_DATA.map((data_item, index) => {
+          let tags = data_item.tags.map((tag_item, index) => {
+            return (<span key={index}> {tag_item} </span>)
+          });
+
+          return (
+            <Timeline.Item label={data_item.date} key={index}>
+              <div>
+                <p>{data_item.title}</p>
+                <div>{data_item.description}</div>
+                <div>{tags}</div>
+              </div>
+            </Timeline.Item>
+          )
+        })
+
+        return ( 
+          <Timeline mode={'left'}>
+            {items}
+          </Timeline>
+        );
+      }
+
+    }
+    
+
+
+    const LogContainer = document.querySelector('#log_container');
+    ReactDOM.render(<LoggerContainer/>, LogContainer);
+  </script>
+</body>
+</html>

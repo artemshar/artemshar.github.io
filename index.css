@@ -186,6 +186,10 @@ html[lang="ru"] .switch-lang_btn.ru {
   border-bottom: solid 1px #000;
 }
 
+.project__item {
+  margin-bottom: 40px;
+}
+
 @media (max-width: 600px) {
   .p-name {
     display: none;
