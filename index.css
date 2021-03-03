@@ -75,7 +75,7 @@ b {
 
 section {
   min-height: 70vh;
-  padding-top: 100px;
+  padding-top: 50px;
   margin-bottom: 80px;
 }
 
@@ -108,7 +108,6 @@ section {
 }
 
 .main {
-  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -137,7 +136,7 @@ section {
   flex-wrap: wrap;
   padding-left: 0;
   margin-left: 8px;
-  margin-right: 25px;
+  margin-right: 20px;
   flex-grow: 1;
 }
 .nav-list li {
@@ -177,7 +176,7 @@ section {
 .switch-lang {
   position: absolute;
   top: 0;
-  left: 3px;  
+  right: 10px;  
 }
 
 .switch-lang__btn {
