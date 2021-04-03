@@ -14,11 +14,11 @@
       min-height: 100vh;
       color: #fff;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      /* background: #74ebd5;  
+      background: #74ebd5;  
       background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
-      background: linear-gradient(to right, #73c2f0, #74ebd5);  */
-      background-color: rgb(14, 14, 14) !important;
-
+      background: linear-gradient(to right, #73c2f0, #74ebd5); 
+      /* background-color: lightblue; */
+      box-sizing: border-box;
     }
     .header {
       width: 100%;
@@ -30,26 +30,57 @@
     }
     .images-wrapper {
       margin: 0 auto;
-
-      /* max-width: 725px; */
+      padding: 30px 0;
+      max-width: 500px;
       width: 100%;
+      background-color: #000;
     }
     .photo-items {
       display: flex; 
-      flex-wrap: wrap;
-      justify-content: space-around;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      justify-content: flex-start;
     }
     .photo-items li {
-      margin: 20px;
-      padding: 25px;
+      position: relative;
+      margin: 10px 60px 10px 60px;
+      padding: 20px;
       background-color: rgb(255, 255, 255);
-      max-height: 400px;
+      /* max-height: 360px; */
       max-width: 100%;
+      /* width: 100%; */
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-items li::before {
+      content: '';
+      /* left: 0; */
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      /* bottom: -30px; */
+      left: -40px;
+      border-left: double rgb(255, 255, 255) 20px;
+      pointer-events: none;
+    }
+
+    .photo-items li::after {
+      content: '';
+      top: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: -40px;
+      border-right: dotted #fff 20px;
+      pointer-events: none;
     }
 
     li img {
+      position: relative;
       object-fit: cover;
-      max-height: 400px;
+      /* max-height: 360px; */
       max-width: 100%;
     }
     ul,li {
@@ -61,9 +92,9 @@
   </style>
 </head>
 <body>
-  <div class="header">
+  <!-- <div class="header">
     <h1>Antalya 03/2021</h1>
-  </div>
+  </div> -->
   <div class="images-wrapper">
     <ul class="photo-items">
       
@@ -111,12 +142,12 @@
       
     </ul>
   </div>
-  <!-- <script src="https://cdn.jsdelivr.net/gh/mvoloskov/image-zoom/dist/image-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mvoloskov/image-zoom/dist/image-zoom.min.js"></script>
   <script>
     imageZoom({
       selector: 'img, svg'
     })
-  </script> -->
+  </script>
   
 </body>
 </html>
