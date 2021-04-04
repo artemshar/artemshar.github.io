@@ -13,11 +13,10 @@
       margin: 0;
       min-height: 100vh;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      /* background: #74ebd5;  
-      background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  
-      background: linear-gradient(to right, #73c2f0, #74ebd5);  */
-      /* background-color: lightblue; */
-      background-color: #fff;
+      background: #f5f5f5;  
+      background: -webkit-linear-gradient(to right, #929292, #ffffff);  
+      background: linear-gradient(to right, #f3f3f3, #f8f8f8); 
+
       box-sizing: border-box;
     }
     .header {
@@ -32,6 +31,7 @@
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+      align-items: flex-start;
       position: relative;
       margin: 0 auto;
     }
@@ -68,11 +68,12 @@
       padding: 10px 0;
       max-width: 350px;
       width: 100%;
-      background-color: #000;
+      background-color: rgb(39, 21, 21);
     }
+
     .photo-items li {
       position: relative;
-      margin: 10px 30px 10px 30px;
+      margin: 10px 40px 10px 40px;
       padding: 10px;
       background-color: rgb(255, 255, 255);
       /* max-height: 360px; */
@@ -100,6 +101,9 @@
       list-style: none;
     }
     
+    .image-zoom-wrapper.image-zoom-wrapper-zoomed::after {
+      opacity: 0.9 !important;
+    }
   </style>
 </head>
 <body>
@@ -126,6 +130,17 @@
         <img src="https://lh3.googleusercontent.com/pw/ACtC-3c-xkFa9r8Zj2-1NoV2X2_fqenvHj7ChQclFhJM5_JURIVNljZ6TlsxmwBhUjWTZwBj8OprLQ8s8c45l4VP_Dfqrqz7wRwYD96fSnhv6cPEC4IBw3dLMNoYSV8eLYK7VWPS39ny6MOFuCBBi0Wf4Iu0=w1542-h867-no?authuser=0">
       </li>
       
+      <li>
+        <img src="https://lh3.googleusercontent.com/tbWMNxyIFfs-pYqPsBv_NL3nieLWWUeZ8k0SrXs_ieYp96r3RrNmzRb_Eo4D-fxCUF6bEjS2Aynnd4Md0caMSwIPrBbji2Ls-BPXkEPoK-ZVxneE85-TTT6UkucqR0l5w5ZP8AIc8_yLR-wFZY0NE7Q7fnfF-deXv3v1ZSX503ZY58FfnptEev74BsCs9jqyx_PvujMY1B0Q-EX6lNwVzOA0QDY4UVpkOuJgzXgF-EJg6xQ87ckqt3fcJSsPN8CCQQtjhmEMz2f0p1LlIP2VHYz50SDj0D1dWRJs6eXcCwx8e29uV5oKgpmPE3dalSVzOKIRtWLZIv0z1bbPmf4VsABhdWFOUsAQ89QaQ82Y6-X3afkFURJuH2jWmzIbU5qgeVnE2nyW11PI8_2MKcVQYoDLeQgOn-EBrr2KczoPcJiqFQuvXbD6812G65Csrmpyy0tzc83kwbHFbdVuJ-1TNBqkGzdzHhCWkejcKeNWONtCP36-7QoWn0-cejleFqWwRmBJoBhqY-p2oAM4MnYtcTYxkDCcgmQT7cVhu-PixUAttjVwRjd5Eob2tqbDJO5cTvwb5p9Wwc7OIwePamK0jtLZUSGxBbL9gupQlmpdLVvivNAIqK41MmAcMsqo2lCkuEhdWVSH2unP25O6Q7wteRFzNh-wh-rvtotxDqAfpLGSt6UC0-HnPVWnLHp5rZHs6CImKp2cDbgo5LJZUfP7qZY=w1920-h630-no?authuser=0">
+      </li>
+
+      <li>
+        <img src="https://lh3.googleusercontent.com/pw/ACtC-3emizUtT7xpT-uK-M24E2v4JXA72BZ4MNTlcMx8_p84kI4ZSq10bEkx5QQrL87OZKIgvA0dcgGrQKteB8s4Rca1Enc754l3mCKz1HzkG79O1Db0WVfqFizfyXheLTQlb1_1rh-oAhAgrik14s2G90En=w1920-h447-no?authuser=0" >
+      </li>
+
+      <li>
+        <img src="https://lh3.googleusercontent.com/pw/ACtC-3ccShf-SC8qPBaVNUEcX0tH10CNtZuJTGGYHnAlDYBtQKLn6jfC7tSfjaBIMSO36O-Z7CnoE1TelxUHEqZtx6Qn3qnXooGXKwgHZxLDFC1SWZuFi8OlBqMldfx2GWCDRMrH9iWHWBD3I4Cn63LY_1Ix=w1920-h576-no?authuser=0">
+      </li>
     </ul>
 
     <ul class="photo-items">
@@ -152,18 +167,9 @@
       <li>
         <img src="https://lh3.googleusercontent.com/pw/ACtC-3eyW0S6M-F4bwyQy7pGPFLP8AR5YjIAaeNHF7EtqspAVCssgs8c4lOpnJoFu2QFEiBYf3i7Gg8YtBbFGRLjNvE8ZSwVvXD-s0HaHKQ8XmO1w3fkY6g7x62OoaHT8HfXhC1Q7US_FMEZUBnR3e7c7vZg=w1542-h867-no?authuser=0">
       </li>
-      <li>
-        <img src="https://lh3.googleusercontent.com/tbWMNxyIFfs-pYqPsBv_NL3nieLWWUeZ8k0SrXs_ieYp96r3RrNmzRb_Eo4D-fxCUF6bEjS2Aynnd4Md0caMSwIPrBbji2Ls-BPXkEPoK-ZVxneE85-TTT6UkucqR0l5w5ZP8AIc8_yLR-wFZY0NE7Q7fnfF-deXv3v1ZSX503ZY58FfnptEev74BsCs9jqyx_PvujMY1B0Q-EX6lNwVzOA0QDY4UVpkOuJgzXgF-EJg6xQ87ckqt3fcJSsPN8CCQQtjhmEMz2f0p1LlIP2VHYz50SDj0D1dWRJs6eXcCwx8e29uV5oKgpmPE3dalSVzOKIRtWLZIv0z1bbPmf4VsABhdWFOUsAQ89QaQ82Y6-X3afkFURJuH2jWmzIbU5qgeVnE2nyW11PI8_2MKcVQYoDLeQgOn-EBrr2KczoPcJiqFQuvXbD6812G65Csrmpyy0tzc83kwbHFbdVuJ-1TNBqkGzdzHhCWkejcKeNWONtCP36-7QoWn0-cejleFqWwRmBJoBhqY-p2oAM4MnYtcTYxkDCcgmQT7cVhu-PixUAttjVwRjd5Eob2tqbDJO5cTvwb5p9Wwc7OIwePamK0jtLZUSGxBbL9gupQlmpdLVvivNAIqK41MmAcMsqo2lCkuEhdWVSH2unP25O6Q7wteRFzNh-wh-rvtotxDqAfpLGSt6UC0-HnPVWnLHp5rZHs6CImKp2cDbgo5LJZUfP7qZY=w1920-h630-no?authuser=0">
-      </li>
 
-      <li>
-        <img src="https://lh3.googleusercontent.com/pw/ACtC-3emizUtT7xpT-uK-M24E2v4JXA72BZ4MNTlcMx8_p84kI4ZSq10bEkx5QQrL87OZKIgvA0dcgGrQKteB8s4Rca1Enc754l3mCKz1HzkG79O1Db0WVfqFizfyXheLTQlb1_1rh-oAhAgrik14s2G90En=w1920-h447-no?authuser=0" >
-      </li>
-
-      <li>
-        <img src="https://lh3.googleusercontent.com/pw/ACtC-3ccShf-SC8qPBaVNUEcX0tH10CNtZuJTGGYHnAlDYBtQKLn6jfC7tSfjaBIMSO36O-Z7CnoE1TelxUHEqZtx6Qn3qnXooGXKwgHZxLDFC1SWZuFi8OlBqMldfx2GWCDRMrH9iWHWBD3I4Cn63LY_1Ix=w1920-h576-no?authuser=0">
-      </li>
     </ul>
+
 
     <ul class="photo-items">
 
