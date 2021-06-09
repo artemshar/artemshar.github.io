@@ -127,7 +127,7 @@ section {
   margin-right: 22px;
   
   font-size: 36px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', 'sans-serif',cursive;
 }
 .nav-list {
   display: flex;
@@ -175,13 +175,14 @@ section {
 
 .switch-lang {
   position: absolute;
-  top: 0;
-  right: 10px;  
+  top: 5px;
+  right: 20px;  
 }
 
 .switch-lang__btn {
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 html[lang="en"] .switch-lang__btn.en {
