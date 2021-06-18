@@ -65,15 +65,15 @@
               Hey! My name is Artem. I'm <span class="p-job-title"><b>Frontend / Web - developer</b></span> since 2016. <br> <br>
               Thank you for your interest in coming here! <br> <br>
               Now is June 2021, I've just finished working on <a target="_blanc" href="https://unicornplatform.com/">the cool product</a>, and I want to get some rest. 
-              But I hope I'll get back to you soon and we'll get to know each other better
+              But I hope I'll get back to you soon and we'll get to know each other better.
               In the meantime, you can find me somewhere on <a lang="EN" href="#contacts">these links.</a>
             </p>
             <p lang="RU">
               Привет! Меня зовут Артём. Я Фронтенд и Веб-разработчик с 2016 года. <br><br>
               Спасибо что зашли сюда и за ваш интерес! <br> <br>
               Сейчас Июнь 2021, только что я закончил работать над одним <a target="_blanc" href="https://unicornplatform.com/">классным продуктом</a> и хочу немного прийти в себя и отдохнуть. 
-              Но надеюсь я вернусь к вам в скором времени и мы познакомимся лучше <br>
-              Пока можете найти меня где-нибудь по <a href="#contacts">этим ссылкам</a>.
+              Но надеюсь я вернусь к вам в скором времени и мы познакомимся лучше.<br>
+              А пока можете найти меня где-нибудь по <a href="#contacts">этим ссылкам</a>.
             </p>
 
           </div>
@@ -212,6 +212,13 @@
   <script>
     const changeLang = (value) => {
       document.documentElement.lang = value;
+    }
+    const userPreferredLang = navigator.language
+    
+    if (userPreferredLang === 'ru-RU') {
+      changeLang('ru');
+    } else if (userPreferredLang === 'en-US' || userPreferredLang === 'en-GB') {
+      changeLang('en');
     }
   </script>
 </body>
