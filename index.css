@@ -1,8 +1,23 @@
-:root {
+.theme-light {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #fd6f53;
+  --font-color: #000000;
+
+
+  --color-bg: rgb(250, 250, 250);
+  --color-font-main: rgb(29, 29, 29);
+  --color-titles: rgb(0, 0, 0);
+}
+.theme-dark {
+  --color-primary: #17ed90;
+  --color-secondary: #243133;
+  --color-accent: #12cdea;
+  --font-color: #ffffff;
+
   --color-bg: rgb(29, 29, 29);
   --color-font-main: #dfdfdf;
-  --titles-color: #e7e7e7;
-  --dark-gray: #202020;
+  --color-titles: #e7e7e7;
 }
 
 html {
@@ -20,7 +35,7 @@ html[lang="ru"] [lang="en"]{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--titles-color);
+  color: var(--color-titles);
 }
 
 h1, h2, h3 {
@@ -91,8 +106,20 @@ section {
 .header {
   background-color: var(--color-bg);
   padding-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 60px;
   z-index: 1;
+}
+
+.controls-dashboard {
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 5px 10px;
+  z-index: 1;
+  background-color: var(--color-bg);
 }
 
 .container {
@@ -127,7 +154,6 @@ section {
   margin-right: 22px;
   
   font-size: 36px;
-  font-family: 'Bebas Neue', 'sans-serif',cursive;
 }
 .nav-list {
   display: flex;
@@ -174,9 +200,7 @@ section {
 }
 
 .switch-lang {
-  position: absolute;
-  top: 5px;
-  right: 20px;  
+  margin: 4px 15px;
 }
 
 .switch-lang__btn {
@@ -185,12 +209,52 @@ section {
   margin-left: 5px;
 }
 
-html[lang="en"] .switch-lang__btn.en {
-  border-bottom: solid 1px rgb(255, 255, 255);
+.theme-switcher {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  margin: 5px 10px;
+  border-radius: 25px;
+  background-color: var(--color-font-main);
+  cursor: pointer;
+}
+.theme-switcher__radio {
+  position: absolute;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-bg);
+  box-sizing: border-box;
+}
+.theme-dark .theme-switcher__radio {
+  right: 5px;
 }
 
-html[lang="ru"] .switch-lang__btn.ru {
-  border-bottom: solid 1px rgb(255, 255, 255);
+.theme-light .theme-switcher__radio {
+  left: 5px;
+}
+
+.theme-switcher__btn {
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.theme-light .theme-switcher__btn.theme-switcher__btn--light{
+  border-bottom: solid 1px rgb(0, 183, 255);
+}
+
+.theme-dark .theme-switcher__btn.theme-switcher__btn--dark{
+  border-bottom: solid 1px rgb(0, 183, 255);
+}
+
+html[lang="en"] .switch-lang__btn.switch-lang__btn--en {
+  border-bottom: solid 1px rgb(0, 183, 255);
+}
+
+html[lang="ru"] .switch-lang__btn.switch-lang__btn--ru {
+  border-bottom: solid 1px rgb(0, 183, 255);
 }
 
 .project__item {

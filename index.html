@@ -8,16 +8,22 @@
   <meta name="description" content="Artem Shar: personal site" />
   <link rel="manifest" href="./assets/favicon/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
-  <title lang="EN">Artem Shar, personal site</title>
-  <title lang="RU">Артём Шарюков, личный сайт</title>
+  <title>Artem Shar, personal site</title>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
+      <div class="controls-dashboard">
+        <div class="theme-switcher" onclick="toggleTheme()">
+          <div class="theme-switcher__radio"></div>
+        </div>
+        <form name="lang" class="switch-lang">
+          <span onclick="changeLang('ru')" class="switch-lang__btn switch-lang__btn--ru">RU</span>
+          <span onclick="changeLang('en')" class="switch-lang__btn switch-lang__btn--en">EN</span>
+        </form>
+      </div>
       <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
         <div class="h-card">
           <a href="https://artemshar.space/"
@@ -204,12 +210,10 @@
         </section>
       </div>
     </footer>
-    <form name="lang" class="switch-lang">
-      <span onclick="changeLang('ru')" class="switch-lang__btn ru">RU</span>
-      <span onclick="changeLang('en')" class="switch-lang__btn en">EN</span>
-    </form>
+
   </div>
   <script>
+    // === START: Switch Lang
     const changeLang = (value) => {
       document.documentElement.lang = value;
     }
@@ -220,6 +224,40 @@
     } else if (userPreferredLang === 'en-US' || userPreferredLang === 'en-GB') {
       changeLang('en');
     }
+    // === END: Switch Lang
+
+
+    // === START: Switch Theme
+    const setTheme = (themeName) => {
+      // const body = document.body;
+      // const currentClass = body.className;
+      localStorage.setItem('theme', themeName);
+      // body.classList.replace(currentClass, themeName);
+      document.documentElement.className = themeName;
+    }
+
+    // function to toggle between light and dark theme
+    function toggleTheme() {
+      if (localStorage.getItem('theme') === 'theme-dark'){
+        setTheme('theme-light');
+      } else {
+        setTheme('theme-dark');
+      }
+    }
+
+    // Immediately invoked function to set the theme on initial load
+    (function () {
+      // check theme in local storage and set default theme
+
+      if (localStorage.getItem('theme') == null){  
+        setTheme('theme-dark');
+      } else if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+      } else {
+        setTheme('theme-light');
+      }
+    })();
+    // === END: Switch Theme
   </script>
 </body>
 
