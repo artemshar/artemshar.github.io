@@ -263,34 +263,32 @@ html[lang="ru"] .switch-lang__btn.switch-lang__btn--ru {
 blockquote {
   font-style: italic;
   padding: 10px 12px;
-  background-color: rgb(230, 230, 230);
   border-radius: 3px;
 }
 
 /* Books */
-.books-section .books-list {
+.books-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
-.books-section .books-item {
+.books-item {
   display: flex; 
   flex-wrap: wrap;
   padding: 20px;
-  border-radius: 1px;
-  background-color: #dadada;
+  border-bottom: 2px solid var(--font-color);
 }
-.books-section .book-item__content {
+.book-item__content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-.books-section .book-item__title {
+.book-item__title {
   margin-bottom: 20px;
   width: 100%;
 }
-.books-section .book-item__image {
+.book-item__image {
   max-width: 240px;
   margin-right: 30px;
   padding-top: 20px;
@@ -305,5 +303,9 @@ blockquote {
 
   .nav-list li {
     font-size: 16px;
+  }
+
+  .book-item__content {
+    flex-wrap: wrap;
   }
 }
