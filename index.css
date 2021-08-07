@@ -150,10 +150,9 @@ section {
   align-items: center;
   justify-content: space-between;
 }
-.p-name {
-  margin-right: 22px;
-  
-  font-size: 36px;
+.header-title {
+  margin: 0 12px;
+  font-size: 30px;
 }
 .nav-list {
   display: flex;
@@ -261,8 +260,46 @@ html[lang="ru"] .switch-lang__btn.switch-lang__btn--ru {
   margin-bottom: 20px;
 }
 
+blockquote {
+  font-style: italic;
+  padding: 10px 12px;
+  background-color: rgb(230, 230, 230);
+  border-radius: 3px;
+}
+
+/* Books */
+.books-section .books-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.books-section .books-item {
+  display: flex; 
+  flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 1px;
+  background-color: #dadada;
+}
+.books-section .book-item__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.books-section .book-item__title {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.books-section .book-item__image {
+  max-width: 240px;
+  margin-right: 30px;
+  padding-top: 20px;
+  object-fit: contain;
+}
+
+/* Books end */
 @media (max-width: 600px) {
-  .p-name {
+  .header-title {
     display: none;
   }
 
