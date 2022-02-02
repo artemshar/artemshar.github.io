@@ -29,10 +29,11 @@
           <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center;">
             <img class="mini-avatar" width="50px" height="50px" src="../assets/favicon/android-chrome-192x192.png"
               alt="Me and the Finish Gulf on background">
-            <span class="header-title"> / Книги</span>
           </a>
+          <span class="header-title" lang="EN"> / Books</span>
+          <span class="header-title" lang="RU"> / Книги</span>
         </div>
-       <ul class="nav-list">
+        <ul class="nav-list">
           <li>
             <a lang="EN" href="#contacts">Contacts</a>
             <a lang="RU" href="#contacts">Контакты</a>
@@ -42,15 +43,51 @@
     </header>
     <main class="main">
       <div class="container">
-        <blockquote>Книга - это не файл, который вы загружаете в голову и автоматически начинаете применять знания. 
+        <blockquote lang="RU">Книга - это не файл, который вы загружаете в голову и автоматически начинаете применять
+          знания.
           Это собеседник, у которого могут быть ответы на ваши вопросы - но только если они у вас есть.
-        <a target="_blank" href="https://www.maximilyahov.ru/blog/all/collectionista/" rel="author">(c) Ильяхов</a>
+          <a target="_blank" href="https://www.maximilyahov.ru/blog/all/collectionista/" rel="author">(c) Ильяхов</a>
         </blockquote>
 
         <section class="books-section">
-          <h2>Книги, которые я читал</h2>
+          <h2 lang="RU">Главная полка</h2>
+          <h2 lang="EN">Main Shelf</h2>
           <ul class="books-list">
-            <li class="books-item">
+            <li class="books-item" lang="RU">
+              <h4 class="book-item__title">"Думай как математик" - Оакли Барбара</h4>
+              <div class="book-item__content">
+                <img class="book-item__image"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477845757l/27118836._SX318_.jpg"
+                  alt="Book cover of Barbara Oakley - Think like a mathematician">
+                <div class="book-item__description">
+                  <p>Книга не раз напоминала о себе, когда на собственном опыте помогала решать непростые
+                    профессиональные, да и жизненные задачи.</p>
+                  <p>Я очень часто слышал схожие идеи в разговорах людей об эффективном мышлении, да что там - о
+                    счастье, отношениях, спорте.</p>
+                  <p>Да, это странно, в одной книге увидеть ответ на множество вопросов. Но меня правда удивляет, как
+                    много проблем можно решить, просто вовремя переключая своё внимание со сфокусированного мышления на
+                    расфокусированное, или с одного дела на другое, не зацикливаясь на одном.</p>
+                </div>
+              </div>
+            </li>
+            <li class="books-item" lang="EN">
+              <h4 class="book-item__title">Barbara Oakley - Think like a mathematician</h4>
+              <div class="book-item__content">
+                <img class="book-item__image"
+                  src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477845757l/27118836._SX318_.jpg"
+                  alt="Book cover of Barbara Oakley - Think like a mathematician">
+                <div class="book-item__description">
+                  <p>The book has repeatedly reminded of itself when it helped to solve difficult professional and life
+                    tasks on its own experience.</p>
+                  <p>I have very often heard similar ideas in people's conversations about effective
+                    thinking, and what's there - about happiness, relationships, sports.</p>
+                  <p>Yes, it's strange to see the answer to many questions in one book. But it really surprises me how
+                    many problems can be solved just by switching your attention from focused thinking to unfocused in
+                    time, or from one case to another, without dwelling on one.</p>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="books-item">
               <h4 class="book-item__title">"Над пропастью во ржи" - Джером Сэлинджер</h4>
               <div class="book-item__content">
                 <img class="book-item__image" src="https://savethecat.com/wp-content/uploads/2019/05/243a0ba33adbee20d3ed689fbf712ec8-jd-salinger-holden-caulfield-416x600.jpg" alt="The Catcher in the Rye">
@@ -65,7 +102,7 @@
                     Но характер героя и атмосферу его окружающего мира я запомнил хорошо, потому что нашёл в них отражения себя, своих переживаний и новый взгляд - какие-то решения на схожие проблемы подросткового возраста.</p>
                 </div>  
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
 
@@ -146,7 +183,7 @@
       document.documentElement.lang = value;
     }
     const userPreferredLang = navigator.language
-    
+
     if (userPreferredLang === 'ru-RU') {
       changeLang('ru');
     } else if (userPreferredLang === 'en-US' || userPreferredLang === 'en-GB') {
@@ -166,7 +203,7 @@
 
     // function to toggle between light and dark theme
     function toggleTheme() {
-      if (localStorage.getItem('theme') === 'theme-dark'){
+      if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
       } else {
         setTheme('theme-dark');
@@ -177,7 +214,7 @@
     (function () {
       // check theme in local storage and set default theme
 
-      if (localStorage.getItem('theme') == null){  
+      if (localStorage.getItem('theme') == null) {
         setTheme('theme-dark');
       } else if (localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-dark');

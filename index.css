@@ -277,7 +277,6 @@ blockquote {
   display: flex; 
   flex-wrap: wrap;
   padding: 20px;
-  border-bottom: 2px solid var(--font-color);
 }
 .book-item__content {
   display: flex;
@@ -289,7 +288,7 @@ blockquote {
   width: 100%;
 }
 .book-item__image {
-  max-width: 240px;
+  max-width: 140px;
   margin-right: 30px;
   padding-top: 20px;
   object-fit: contain;
