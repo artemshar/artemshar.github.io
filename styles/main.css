@@ -15,15 +15,19 @@
 
 .linkedin_link {
   position: fixed;
-  bottom: 30px;
-  left: 30px;
-  font-size: 1.5rem;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.25rem;
   color: #fff;
   transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .linkedin_link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 
