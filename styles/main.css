@@ -1,0 +1,29 @@
+.hero_image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin_link {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.linkedin_link:hover {
+  text-decoration: underline;
+}
+
+
